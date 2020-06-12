@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mileage Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="form-container">
+        <h1>Mileage Calculator</h1>
+
+        <form id="myForm">
+            <div class="startCity">
+                <label for="startCity">Start City</label>
+                <input type="text" class="form-control" id="startCity" placeholder="City" required>
+            </div>
+            <div class="startState">
+                <label for="startState">Start State</label>
+                <input type="text" class="form-control" id="startState" placeholder="State" required>
+            </div>
+            <div class="endCity">
+                <label for="endCity">Destination City</label>
+                <input type="text" class="form-control" id="endCity" placeholder="City" required>
+            </div>
+            <div class="endState">
+                <label for="endState">Destination State</label>
+                <input type="text" class="form-control" id="endState" placeholder="State" required>
+            </div>
+            <div id="request">
+                <label for="endState">Total Distance</label>
+                <input type="text" class="form-control" id="total" readonly>
+                <button type="button" class="btn btn-primary" id="request-button">Request</button>
+                <button type="reset" class="btn btn-secondary" id="clear-buttton">Clear</button>
+            </div>
+        </form>
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
